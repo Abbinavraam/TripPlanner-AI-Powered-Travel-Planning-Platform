@@ -1,0 +1,772 @@
+/* ViewTripPage Responsive Design - Mobile First */
+
+/* Base Mobile Styles (320px+) */
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-gray-50 {
+    background-color: #f9fafb;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.px-4 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.py-4 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.py-8 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.lg\:grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-8 {
+    gap: 1rem;
+}
+
+.gap-4 {
+    gap: 0.75rem;
+}
+
+/* Small Devices (481px - 768px) */
+@media (min-width: 481px) {
+    .container {
+        max-width: 600px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .py-8 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .gap-8 {
+        gap: 1.5rem;
+    }
+
+    .gap-4 {
+        gap: 1rem;
+    }
+}
+
+/* Medium Devices (769px - 1024px) */
+@media (min-width: 769px) {
+    .container {
+        max-width: 900px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gap-8 {
+        gap: 2rem;
+    }
+}
+
+/* Large Devices (1025px+) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .gap-8 {
+        gap: 2.5rem;
+    }
+}
+
+/* Hero Section - Responsive */
+.relative {
+    position: relative;
+}
+
+/* Responsive Hero Heights */
+.hero-image {
+    height: 250px; /* Mobile height */
+}
+
+.w-full {
+    width: 100%;
+}
+
+.object-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-opacity-40 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-4 {
+    gap: 0.5rem;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-4xl {
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.mb-4 {
+    margin-bottom: 0.75rem;
+}
+
+/* Hero Responsive Adjustments */
+@media (min-width: 481px) {
+    .hero-image {
+        height: 300px;
+    }
+    
+    .text-4xl {
+        font-size: 2rem;
+    }
+
+    .gap-4 {
+        gap: 0.75rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-image {
+        height: 350px;
+    }
+
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+
+    .gap-4 {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero-image {
+        height: 400px;
+    }
+
+    .text-4xl {
+        font-size: 2.5rem;
+    }
+
+    .gap-4 {
+        gap: 1.25rem;
+    }
+}
+
+/* Action Bar - Responsive */
+.bg-white {
+    background-color: #ffffff;
+}
+
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-xl {
+    font-size: 1rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.space-x-4 > * + * {
+    margin-left: 0.5rem;
+}
+
+.px-4 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.py-2 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.hover\:bg-gray-100:hover {
+    background-color: #f7fafc;
+}
+
+/* Action Bar Responsive Adjustments */
+@media (min-width: 481px) {
+    .text-xl {
+        font-size: 1.125rem;
+    }
+
+    .space-x-4 > * + * {
+        margin-left: 0.75rem;
+    }
+
+    .px-4 {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .text-xl {
+        font-size: 1.25rem;
+    }
+
+    .space-x-4 > * + * {
+        margin-left: 1rem;
+    }
+
+    .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .text-xl {
+        font-size: 1.375rem;
+    }
+
+    .space-x-4 > * + * {
+        margin-left: 1.25rem;
+    }
+}
+
+/* Button icons - Responsive */
+.w-5 {
+    width: 1rem;
+    height: 1rem;
+}
+
+.h-5 {
+    height: 1rem;
+}
+
+.mr-2 {
+    margin-right: 0.375rem;
+}
+
+/* Main Content - Responsive */
+.bg-white {
+    background-color: #ffffff;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.p-6 {
+    padding: 1rem;
+}
+
+.border-b {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-gray-600 {
+    color: #4a5568;
+}
+
+.text-gray-400 {
+    color: #e2e8f0;
+}
+
+.text-gray-500 {
+    color: #a0aec0;
+}
+
+/* Icon and Content Responsive Adjustments */
+@media (min-width: 481px) {
+    .w-5 {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
+    .h-5 {
+        height: 1.125rem;
+    }
+
+    .mr-2 {
+        margin-right: 0.5rem;
+    }
+
+    .p-6 {
+        padding: 1.25rem;
+    }
+
+    .rounded-xl {
+        border-radius: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .w-5 {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .h-5 {
+        height: 1.25rem;
+    }
+
+    .p-6 {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .w-5 {
+        width: 1.375rem;
+        height: 1.375rem;
+    }
+
+    .h-5 {
+        height: 1.375rem;
+    }
+
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .rounded-xl {
+        border-radius: 1.25rem;
+    }
+}
+
+/* Day Selector - Responsive */
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.px-6 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.py-3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.border-b-2 {
+    border-bottom-width: 2px;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-green-600 {
+    color: #2f855a;
+}
+
+.border-green-600 {
+    border-color: #2f855a;
+}
+
+.text-gray-500 {
+    color: #a0aec0;
+}
+
+.text-gray-700 {
+    color: #4a5568;
+}
+
+/* Day Selector Responsive Adjustments */
+@media (min-width: 481px) {
+    .px-6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .py-3 {
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .px-6 {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .py-3 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Activities Section - Responsive */
+.text-xl {
+    font-size: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 0.75rem;
+}
+
+.last\:mb-0:last-child {
+    margin-bottom: 0;
+}
+
+.w-24 {
+    width: 4rem;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.bg-gray-50 {
+    background-color: #f9fafb;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.p-4 {
+    padding: 0.75rem;
+}
+
+.text-gray-600 {
+    color: #4a5568;
+}
+
+/* Trip Details - Responsive */
+.space-y-4>*+* {
+    margin-top: 0.75rem;
+}
+
+.text-gray-600 {
+    color: #4a5568;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+/* Activities and Details Responsive Adjustments */
+@media (min-width: 481px) {
+    .text-xl {
+        font-size: 1.125rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 1rem;
+    }
+
+    .w-24 {
+        width: 5rem;
+    }
+
+    .p-4 {
+        padding: 1rem;
+    }
+
+    .space-y-4>*+* {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .text-xl {
+        font-size: 1.25rem;
+    }
+
+    .w-24 {
+        width: 6rem;
+    }
+
+    .p-4 {
+        padding: 1.25rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .text-xl {
+        font-size: 1.375rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.25rem;
+    }
+
+    .p-4 {
+        padding: 1.5rem;
+    }
+
+    .space-y-4>*+* {
+        margin-top: 1.25rem;
+    }
+}
+
+/* Mobile Specific Optimizations */
+@media (max-width: 480px) {
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+        .flex{
+        align-items: stretch;
+    }
+    .hero-image {
+        height: 200px;
+    }
+
+    .text-4xl {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .gap-4 {
+        gap: 0.375rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 0.5rem;
+    }
+
+    .py-8 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .gap-8 {
+        gap: 0.75rem;
+    }
+
+    .text-xl {
+        font-size: 0.9rem;
+    }
+
+    .px-4 {
+        padding-left: 0.375rem;
+        padding-right: 0.375rem;
+    }
+
+    .py-2 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    .space-x-4 > * + * {
+        margin-left: 0.25rem;
+    }
+
+    .w-5 {
+        width: 0.875rem;
+        height: 0.875rem;
+    }
+
+    .h-5 {
+        height: 0.875rem;
+    }
+
+    .mr-2 {
+        margin-right: 0.25rem;
+    }
+
+    .p-6 {
+        padding: 0.75rem;
+    }
+
+    .px-6 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .py-3 {
+        padding-top: 0.375rem;
+        padding-bottom: 0.375rem;
+    }
+
+    .w-24 {
+        width: 3rem;
+    }
+
+    .p-4 {
+        padding: 0.5rem;
+    }
+
+    .space-y-4>*+* {
+        margin-top: 0.5rem;
+    }
+
+    /* Hide some action buttons on very small screens */
+    .space-x-4 > *:nth-child(n+3) {
+        display: none;
+    }
+}
+
+/* Landscape Mode Adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-image {
+        height: 180px;
+    }
+
+    .text-4xl {
+        font-size: 1.375rem;
+    }
+
+    .py-8 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .gap-8 {
+        gap: 1rem;
+    }
+
+    .p-6 {
+        padding: 1rem;
+    }
+}
+
+/* Touch-friendly adjustments */
+@media (max-width: 768px) {
+    button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .flex-wrap {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .justify-between {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+/* Utility Classes */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
